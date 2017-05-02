@@ -119,6 +119,35 @@ input[type="text"]{
 	height: 600px;
 	margin-top:-10px;
 }
+.section-video{
+	background: white;
+	width: 100%;
+	display: inline-block;
+	height: 450px;
+}
+.sec-left{
+	display: inline-block;
+	width: 35%;
+	height: 500px;
+}
+.cnt-left{
+	padding-top: 100px;
+	width: 80%;
+	margin:auto;
+	color: #333447;
+}
+.cnt-left h4{
+	padding-bottom: 8px;
+}
+.cnt-left h1{
+	padding-bottom: 20px;
+}
+.cnt-left p{
+	font-style: normal;
+	font-variant: normal;
+	line-height: 25px;
+	text-align: left;
+}
 #cnt-info-left{
 	display: inline-block;
 	margin-top: 60px;
@@ -138,12 +167,14 @@ input[type="text"]{
 #cnt-info-rigth img{
 	width: 500px;
 }
-.cnt-video{
-	width: 100%;
+.cnt-rigth{
+	width: 65%;
 	height: 100%;
+	float: right;
 }
 
-.video-src{
-	width: 100%;
+.cnt-left-video{
+	width: 65%;
 	height: 100%;
+	float: left;
 }

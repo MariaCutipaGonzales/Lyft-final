@@ -1,4 +1,149 @@
 *{
 	font-family: 'Montserrat', sans-serif;
 	box-sizing: border-box;
+	margin: 0;
+}
+
+header{
+	position: fixed;
+	z-index: 1000;
+	color: white;
+	font-size: 1.3rem;
+}
+
+nav{
+	display: inline-block;
+	padding-left: 100px;
+	padding-top: 50px;
+	width: 100%;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+li {
+	float: right;
+	margin-right: 10px;
+}
+
+li a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+	cursor: pointer;
+}
+
+li a:hover{
+    color: rgb(255,0,191);
+}
+#login{
+	border:1px solid white;
+	border-radius: 8px;
+}
+
+#login:hover{
+	background-color:rgb(98,85,114);
+	color:white;
+}
+#logo{
+	width: 75px;
+	height: 45px;
+	float: left;
+	left: 0;
+	margin-right: 460px;
+}
+#logo img{
+	width: 100%;
+	height: 100%;
+}
+
+.form{
+	float: right;
+	width: 500px;
+	right: 0px;
+	background: white;
+	top: 130px;
+	position: absolute;
+	z-index: 1000;
+}
+.cnt-form{
+	width: 400px;
+	margin-top: 60px;
+	margin-left: 60px;
+}
+.cnt-form h1{
+	color: #352384;
+	font-size: 2.5rem;
+}
+.cnt-form p{
+	padding-top: 10px;
+	color: #352384;
+}
+.cnt-form button{
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 20px 25px;
+	font-size: 1.1	rem;
+	color: white;
+	border-color: transparent!important;
+	border-radius: 10px;
+	background: #ff00bf;
+}
+input[type="text"]{
+	margin-top: 20px;
+	padding:8px;
+	display:inline-block;
+	border:none;
+	border-bottom:1px solid #ccc;
+	width:100%
+}
+
+.cmmt{
+	font-size: 0.7rem;
+}
+.cmmt a{
+	color: #ff00bf;
+	text-decoration: none;
+}
+.section-1{
+	background: rgb(102,37,134);
+	width: 100%;
+	display: inline-block;
+	height: 600px;
+	margin-top:-10px;
+}
+#cnt-info-left{
+	display: inline-block;
+	margin-top: 60px;
+	margin-left: 170px;
+	width: 470px;
+	color: white;
+}
+#cnt-info-left p{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#cnt-info-rigth{
+	margin-top: 60px;
+	display: inline-block;
+	float: right;
+}
+#cnt-info-rigth img{
+	width: 500px;
+}
+.cnt-video{
+	width: 100%;
+	height: 100%;
+}
+
+.video-src{
+	width: 100%;
+	height: 100%;
 }

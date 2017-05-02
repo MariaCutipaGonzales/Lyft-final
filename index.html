@@ -6,58 +6,51 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/montserrat.css">
 	<link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
+	<link rel="icon" href="assets/img/favicon.ico">
 </head>
 <body>
 	<header>
-		<nav class="nav-header">
-			<ul>
-				<span id="logo"><img src="assets/img/logo-white.png"></span>
-				<li style="display: none;" id="Sign">
-					<a href="">
-						<span>Sign in</span>
-					</a>
-				</li>
-				<li>	
-					<a id="login">
-						<span>Log in</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<span>Help</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<span>Explore </span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<span>Drive</span>
-					</a>
-				</li>
-			</ul>
+		<nav id="nav-header">
+			<div id="nav-background">
+				<ul class="nav-ul">
+					<span id="logo" ><img src="assets/img/logo-white.png" id="img-logo"></span>
+					<li style="display: none; color:  rgb(255,0,191)" id="sign">
+						<a href=""><span>Sign in</span></a>
+					</li>
+					<li>	
+						<a id="login"><span>Log in</span></a>
+					</li>
+					<li>
+						<a><span>Help</span></a>
+					</li>
+					<li id="explore">
+						<a><span>Explore</span></a>
+					</li>
+					<li>
+						<a><span>Drive</span></a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<div class="form">
-		<div class="cnt-form">
-			<h1>TURN MILES</h1>
-			<h1>INTO MONEY</h1>
-			<p>SIGN UP TO DRIVE WITH LYFT.</p>
-			<input type="text" id="phone" placeholder="Phone number">
-			<div>
-				<p><input type="text" id="" placeholder="First Name">
-				<input type="text" id="" placeholder="Last Name"></p>
-				<input type="text" id="" placeholder="Email">
-				<input type="text" id="" placeholder="City">
-				<a href="">Promo code?</a>
+		<form >
+			<div class="cnt-form">
+				<h1>TURN MILES</h1>
+				<h1>INTO MONEY</h1>
+				<p>SIGN UP TO DRIVE WITH LYFT.</p>
+				<input type="text" id="phone" placeholder="Phone number"  maxlength="9" pattern="[0-9]{9}"  onfocus="displayFocus(this)" class="input">
+				<div id="view" style="display: none;">
+				<input type="text" id="name" placeholder="Name" pattern="[A-Z]{1}[a-z]*$"  class="input" required>
+					<input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email" class="input" required>
+					<input type="text" id="city"  pattern="[A-Z]{1}[a-z]*$" placeholder="City" class="input" required>
+				</div>
+				<button id="enviar">Become a Driver</button>
+				<a href="">Sign Up to Ride</a>
+				<p class="cmmt">Already applied? <a href="">Check the status of your application here.</a></p>
+				<p class="cmmt">Earn money for inviting friends to drive. <a href=""> Learn more</a></p>
 			</div>
-			<button>Become a Driver</button>
-			<a href="">Sign Up to Ride</a>
-			<p class="cmmt">Already applied? <a href="">Check the status of your application here.</a></p>
-			<p class="cmmt">Earn money for inviting friends to drive. <a href=""> Learn more</a></p>
-		</div>
+		</form>
 	</div>
 	<div class="cnt-video">
 		<video class="video-src"><source src="assets/img/hero-video.mp4" type="video/mp4"></video>
